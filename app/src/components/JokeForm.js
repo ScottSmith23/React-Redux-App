@@ -10,7 +10,7 @@ const JokeForm = props => {
       {props.isFetchingData ? (
         <div>we are fetching data</div>
       ) : (
-        <button onClick={handleGetData}>Get Jokes!</button>
+        <button className="buttonGet" onClick={handleGetData}>Get Jokes!</button>
       )}
     </>
   );
