@@ -11,7 +11,7 @@ function App() {
   const fetchData = useCallback((e)=>dispatch(getData(e)),[dispatch])
   return (
     <div className="App">
-      Ringading
+      Jokes 
       <JokeForm fetchData={fetchData} isFetchingData={jokeData.isFetchingData} />
       <JokeList jokes={jokeData.jokes}/>
     </div>

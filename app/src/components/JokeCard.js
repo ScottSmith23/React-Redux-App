@@ -16,13 +16,15 @@ const JokeCard = ({joke}) => {
     const toggle = () => setIsOpen(!isOpen);
   return (
     <>
-      <div><Col xs="5" md="5" xl="5">
-           <Card style={{backgroundColor:`DARKSLATEGREY`,borderRadius:`30px`}} >
-             <CardHeader>{joke.setup}</CardHeader>
+      <div className="jokeCard"><Col >
+           <Card className="cardstyle" >
+             <CardHeader className="setup">{joke.setup}</CardHeader>
+             <CardBody>
              <Button color="primary" onClick={toggle} style={{ marginBottom: '1rem',marginTop:"1rem",backgroundColor:"orange" }}>Show PunchLine</Button>
              <Collapse isOpen={isOpen} style={{color:`KHAKI`}}>
                <CardText>{joke.punchline}</CardText>
                </Collapse>
+               </CardBody>
            </Card>
          </Col></div>
     </>

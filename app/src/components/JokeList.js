@@ -5,7 +5,7 @@ const JokeList = props => {
 
 
   return (
-    <>
+    <><div className="jokes">
       {props.error ? (
         <div className="error">{props.error}</div>
       ) : (
@@ -13,7 +13,7 @@ const JokeList = props => {
              <JokeCard joke={joke}/>
              )
       )}
-    </>
+   </div> </>
   );
 };
 
