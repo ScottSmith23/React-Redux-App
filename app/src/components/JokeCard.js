@@ -18,11 +18,11 @@ const JokeCard = ({joke}) => {
     <>
       <div className="jokeCard"><Col >
            <Card className="cardstyle" >
-             <CardHeader className="setup">{joke.setup}</CardHeader>
+             <CardHeader className="setup">{joke.setup}🤔</CardHeader>
              <CardBody>
              <Button color="primary" onClick={toggle} style={{ marginBottom: '1rem',marginTop:"1rem",backgroundColor:"orange" }}>Show PunchLine</Button>
              <Collapse isOpen={isOpen} style={{color:`KHAKI`}}>
-               <CardText>{joke.punchline}</CardText>
+               <CardText className="punchline">😂{joke.punchline}😂</CardText>
                </Collapse>
                </CardBody>
            </Card>

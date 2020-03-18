@@ -46,14 +46,27 @@
 .jokeCard{
   margin-top:30px;
   margin-bottom: 30px;
+  font-family: 'Fredoka One', cursive;
+  font-size: large;
+
 }
 
 .cardstyle{
   width: 400px;
-  background-color: rgba(112, 108, 44, 0.548);
-  height: 200px;
+  border-radius: 3px;
+  height: 220px;
+  background-image: linear-gradient(#4e8afa,rgb(147, 176, 238));
+  opacity: 0.94;
+
 }
 
 .setup{
   color:lightgreen;
 }
+
+.headerTitle{
+  color:rgb(0, 0, 0);
+  font-family: 'Bebas Neue', cursive;
+  font-size: 80px;
+}
+

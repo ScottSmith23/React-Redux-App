@@ -11,9 +11,13 @@ function App() {
   const fetchData = useCallback((e)=>dispatch(getData(e)),[dispatch])
   return (
     <div className="App">
-      Jokes 
+      <div class="wrapper">
+  <div class="sliding-background"></div>
+
+      <h1 className="headerTitle">😆Jokes🤣 </h1>
       <JokeForm fetchData={fetchData} isFetchingData={jokeData.isFetchingData} />
       <JokeList jokes={jokeData.jokes}/>
+    </div>
     </div>
   );
 }
