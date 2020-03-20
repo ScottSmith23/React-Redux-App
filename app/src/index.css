@@ -7,7 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url('./img/original2.jpg');
   background-size: cover;
-  
+  overflow-x:hidden;
+  box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
 }
 
 code {
@@ -17,15 +20,20 @@ code {
 
 .wrapper {
   overflow: hidden;
+  overflow-x:hidden;
   
 }
 
-.sliding-background {
+.sliding-background  {
   background: url("./img/original3.jpg") repeat-x;
-  height: 200px;
-  width: 5076px;
+  background-size: contain;
   animation: slide 60s linear infinite;
-  
+  position: absolute;
+  height: 1600px;
+  width: 5076px;
+  z-index: -1 ;
+
+
 }
 
 @keyframes slide{
