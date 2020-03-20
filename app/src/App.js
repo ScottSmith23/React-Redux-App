@@ -13,9 +13,11 @@ function App() {
     <div className="App">
       <div class="wrapper">
   <div class="sliding-background"></div>
+    <div className="uiStuff">
       <h1 className="headerTitle">😆Jokes🤣 </h1>
       <JokeForm fetchData={fetchData} isFetchingData={jokeData.isFetchingData} />
       <JokeList jokes={jokeData.jokes}/>
+      </div>
     </div>
     </div>
   );

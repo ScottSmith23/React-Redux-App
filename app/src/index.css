@@ -19,9 +19,7 @@ code {
 }
 
 .wrapper {
-  overflow: hidden;
   overflow-x:hidden;
-  
 }
 
 .sliding-background  {
@@ -32,8 +30,6 @@ code {
   height: 1600px;
   width: 5076px;
   z-index: -1 ;
-
-
 }
 
 @keyframes slide{
